@@ -14,10 +14,10 @@ app.get('/user', verifyToken, controllers.getUserById)
 app.post('/register', controllers.register)
 app.post('/login', controllers.login)
 
-const PORT = process.env.PORT || 4000;
+const port = process.env.PORT || 8081;
 
-app.listen(PORT, ()=>{
-    console.log(`server (users) listening on port: ${PORT}`);
+app.listen(port, ()=>{
+    console.log(`server (users) listening on port: ${port}`);
     db()
 })
 
