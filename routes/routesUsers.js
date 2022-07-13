@@ -1,5 +1,5 @@
 // REQUERIMOS EL MODULO USERCONTROLLER QUE CONTIENE LAS FUNCIONES CRUD
-const registersController = require('../controllers/exportController');
+const registersController = require('../controllers');
 const verifyToken = require('../middlewares/verifyToken');
 const express = require('express');
 // REQUERIMOS EXPRESS.ROUTER Un método de ruta se deriva de uno de los métodos HTTP 
